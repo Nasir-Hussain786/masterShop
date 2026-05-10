@@ -167,8 +167,8 @@
   .timer-unit .label { font-size: 10px; font-weight: 600; }
   .timer-unit .num { font-size: 28px; font-weight: 700; }
   .timer-colon { font-size: 26px; font-weight: 700; color: var(--red); line-height: 1.5; }
-  .nav-arrows { display: flex; gap: 8px; margin-left: 230px; }
-  .nav-arrows-categories{display: flex; gap: 8px; margin-left: 490px;}
+  .nav-arrows { display: flex; gap: 8px; margin-left: auto; }
+  .nav-arrows,.nav-arrows-categories{display: flex; gap: 8px; margin-left: auto;}
   .arr-btn {
     width: 36px; height: 36px;
     border-radius: 50%;

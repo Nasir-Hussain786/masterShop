@@ -568,7 +568,15 @@
   .arrival-info p {
     font-size: 13px;
   }
+
+  #flash-sales{margin: 0;}
+#categories{margin: 0;}
+#best-selling{margin: 0;}
+.section-header{gap: 20px;}
+#new-arrival{margin: 0;}
+.services-grid{margin-top: 20px;}
 }
+
   /* ===== SERVICES ===== */
   .services-section {
     background: #fff;

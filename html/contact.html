@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact - Shopping-Master</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <span>Summer Sale For All Swim Suits And Free Express Delivery – OFF 50%! <a href="#" id="shopNowBtn">ShopNow</a></span>
+  <select class="lang-select"><option>English </option></select>
+</div>
+
+  
+<!-- HEADER -->
+<header>
+  <button class="hamburger" onclick="document.getElementById('mobileSidebar').classList.toggle('open')">
+    <i class="fas fa-bars"></i>
+  </button>
+  <div class="logo">Shopping Master</div>
+  <nav>
+    <a href="../html/index.html">Home</a>
+    <a href="#">Contact</a>
+    <a href="../html/about.html">About</a>
+    <a href="../html/signup.html">Sign Up</a>
+    <a href="../html/login.html">Log In</a>
+  </nav>
+ <div class="header-right">
+    <div class="search-box">
+      <input type="text" placeholder="What are you looking for?"/>
+      <i class="fas fa-search" style="color:var(--gray); font-size:14px;"></i>
+    </div>
+    <button class="icon-btn"><i class="far fa-heart"></i></button>
+    <button class="icon-btn"><i class="fas fa-shopping-cart"></i></button>
+    <button class="icon-btn"><i class="far fa-user"></i></button>
+  </div>
+</header>
+
+<!-- MOBILE SIDEBAR -->
+<div class="mobile-sidebar" id="mobileSidebar">
+  <div class="sidebar-overlay" onclick="document.getElementById('mobileSidebar').classList.toggle('open')"></div>
+  <div class="sidebar-drawer">
+    <button class="close-btn" onclick="document.getElementById('mobileSidebar').classList.toggle('open')"><i class="fas fa-times"></i></button>
+    <ul>
+      <li><a href="../html/index.html">Home</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="../html/about.html">About</a></li>
+      <li><a href="../html/signup.html">Sign Up</a></li>
+      <li><a href="../html/login.html">Log In</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- CONTACT SECTION -->
+<div class="contact-section">
+
+  <!-- Left Info -->
+  <div class="contact-info">
+    <div class="info-block">
+      <div class="info-block-header">
+        <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+        <h3>Call To Us</h3>
+      </div>
+      <p>We are available 24/7, 7 days a week.</p>
+      <br/>
+      <p><strong>Phone: +8801611112222</strong></p>
+    </div>
+    <div class="info-block">
+      <div class="info-block-header">
+        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+        <h3>Write To US</h3>
+      </div>
+      <p>Fill out our form and we will contact you within 24 hours.</p>
+      <br/>
+      <p><strong>Emails: customer@exclusive.com</strong></p>
+      <br/>
+      <p><strong>Emails: support@exclusive.com</strong></p>
+    </div>
+  </div>
+
+  <!-- Right Form -->
+  <div class="contact-form-wrap">
+    <div class="form-row">
+      <input type="text" class="form-input" placeholder="Your Name *"/>
+      <input type="email" class="form-input" placeholder="Your Email *"/>
+      <input type="tel" class="form-input" placeholder="Your Phone *"/>
+    </div>
+    <textarea class="form-textarea" placeholder="Your Massage"></textarea>
+    <div class="form-bottom">
+      <button class="btn-send" onclick="handleSubmit()">Send Massage</button>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<div class="services-section">
+  <div class="services-grid">
+    <div class="service-item">
+      <div class="service-icon"><i class="fas fa-truck"></i></div>
+      <h4>FREE AND FAST DELIVERY</h4>
+      <p>Free delivery for all orders over $140</p>
+    </div>
+    <div class="service-item">
+      <div class="service-icon"><i class="fas fa-headset"></i></div>
+      <h4>24/7 CUSTOMER SERVICE</h4>
+      <p>Friendly 24/7 customer support</p>
+    </div>
+    <div class="service-item">
+      <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+      <h4>MONEY BACK GUARANTEE</h4>
+      <p>We return money within 30 days</p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>Shopping Master</h3>
+        <h4>Subscribe</h4>
+        <p>Get 10% off your first order</p>
+        <div class="subscribe-box">
+          <input type="email" placeholder="Enter your email" />
+          <button><i class="fas fa-paper-plane"></i></button>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+        <p>exclusive@gmail.com</p>
+        <p>+88015-88888-9999</p>
+      </div>
+      <div class="footer-col">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Login / Register</a></li>
+          <li><a href="#">Cart</a></li>
+          <li><a href="#">Wishlist</a></li>
+          <li><a href="#">Shop</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Link</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms Of Use</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Download App</h4>
+        <p style="font-size:11px; color:#aaa;">Save $3 with App New User Only</p>
+        <div style="display:flex; gap:12px; align-items:center; margin-bottom:12px;">
+          <div>
+            <img src="../assests/qrCode.png" alt="">
+          </div>
+          <div>
+            <div class="google-play-container">
+              <img src="../assests/google-play.png" alt="">
+            </div>
+            <div>
+              <img src="../assests/app-store.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; Copyright Rimel 2022. All right reserved
+    </div>
+  </footer>
+
+<script src="../javascript/script.js">
+</script>
+</body>
+</html>

@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - Shopping-Master</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div>
+      <span>Summer Sale For All Swim Suits And Free Express Delivery – OFF 50%! <a href="#"
+          id="shopNowBtn">ShopNow</a></span>
+    </div>
+    <div>
+      <select class="lang-select">
+        <option>English </option>
+      </select>
+    </div>
+  </div>
+
+  
+<!-- HEADER -->
+<header>
+  <button class="hamburger" onclick="document.getElementById('mobileSidebar').classList.toggle('open')">
+    <i class="fas fa-bars"></i>
+  </button>
+  <div class="logo">Shopping Master</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="../html/contact.html">Contact</a>
+    <a href="../html/about.html">About</a>
+    <a href="../html/signup.html">Sign Up</a>
+    <a href="../html/login.html">Log In</a>
+  </nav>
+  <div class="header-right">
+    <div class="search-box">
+      <input type="text" placeholder="What are you looking for?"/>
+      <i class="fas fa-search" style="color:var(--gray); font-size:14px;"></i>
+    </div>
+    <button class="icon-btn"><i class="far fa-heart"></i></button>
+    <button class="icon-btn"><i class="fas fa-shopping-cart"></i></button>
+    <button class="icon-btn"><i class="far fa-user"></i></button>
+  </div>
+</header>
+
+  <!-- MOBILE SIDEBAR -->
+  <div class="mobile-sidebar" id="mobileSidebar">
+    <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
+    <div class="sidebar-drawer">
+      <button class="close-btn" onclick="toggleSidebar()"><i class="fas fa-times"></i></button>
+      <ul>
+        <li><a href="#">Woman's Fashion</a></li>
+        <li><a href="#">Men's Fashion</a></li>
+        <li><a href="#">Electronics</a></li>
+        <li><a href="#">Home & Lifestyle</a></li>
+        <li><a href="#">Medicine</a></li>
+        <li><a href="#">Sports & Outdoor</a></li>
+        <li><a href="#">Baby's & Toys</a></li>
+        <li><a href="#">Groceries & Pets</a></li>
+        <li><a href="#">Health & Beauty</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <div class="hero-section">
+    <div class="sidebar">
+      <ul>
+        <li><a href="#">Woman's Fashion <i class="fas fa-chevron-right"></i></a></li>
+        <li><a href="#">Men's Fashion <i class="fas fa-chevron-right"></i></a></li>
+        <li><a href="#">Electronics</a></li>
+        <li><a href="#">Home & Lifestyle</a></li>
+        <li><a href="#">Medicine</a></li>
+        <li><a href="#">Sports & Outdoor</a></li>
+        <li><a href="#">Baby's & Toys</a></li>
+        <li><a href="#">Groceries & Pets</a></li>
+        <li><a href="#">Health & Beauty</a></li>
+      </ul>
+    </div>
+    <div class="hero-banner">
+      <div class="hero-content">
+        <div class="hero-brand">
+          <i class="fab fa-apple"></i> iPhone 14 Series
+        </div>
+        <h1>Up to 10% off Voucher</h1>
+        <a href="#" class="hero-cta">Shop Now <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <img class="hero-image" src="../assests/iphone-mobile-img.png" alt="iPhone 14" style="border-radius:8px;" />
+      <div class="hero-dots">
+        <span></span><span></span><span class="active"></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLASH SALES -->
+  <section id="flash-sales">
+    <div>
+      <div class="section-tag">
+        <div class="red-bar"></div><span>Today's</span>
+      </div>
+      <div class="section-header">
+        <h2>Flash Sales</h2>
+        <div class="timer">
+          <div class="timer-unit">
+            <div class="label">Days</div>
+            <div class="num" id="days">03</div>
+          </div>
+          <div class="timer-colon">:</div>
+          <div class="timer-unit">
+            <div class="label">Hours</div>
+            <div class="num" id="hours">23</div>
+          </div>
+          <div class="timer-colon">:</div>
+          <div class="timer-unit">
+            <div class="label">Minutes</div>
+            <div class="num" id="minutes">19</div>
+          </div>
+          <div class="timer-colon">:</div>
+          <div class="timer-unit">
+            <div class="label">Seconds</div>
+            <div class="num" id="seconds">56</div>
+          </div>
+        </div>
+        <div class="nav-arrows">
+          <button class="arr-btn"><i class="fas fa-arrow-left"></i></button>
+          <button class="arr-btn"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <span class="badge">-40%</span>
+            <img src="../assests/gamepad.png" alt="Gamepad" />
+            <div class="product-actions">
+              <button><i class="far fa-heart"></i></button>
+              <button><i class="far fa-eye"></i></button>
+            </div>
+            <button class="add-to-cart">Add To Cart</button>
+          </div>
+          <div class="product-info">
+            <h4>HAVIT HV-G92 Gamepad</h4>
+            <div class="product-price"><span class="price-new">$120</span><span class="price-old">$160</span></div>
+            <div class="stars">★★★★★ <span>(88)</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <span class="badge">-35%</span>
+            <img src="../assests/rgb-keyboard.png" alt="Keyboard" />
+            <div class="product-actions">
+              <button><i class="far fa-heart"></i></button>
+              <button><i class="far fa-eye"></i></button>
+            </div>
+            <button class="add-to-cart">Add To Cart</button>
+          </div>
+          <div class="product-info">
+            <h4>AK-900 Wired Keyboard</h4>
+            <div class="product-price"><span class="price-new">$960</span><span class="price-old">$1160</span></div>
+            <div class="stars">★★★★☆ <span>(75)</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <span class="badge">-30%</span>
+            <img src="../assests/monitor.png" alt="Monitor" />
+            <div class="product-actions">
+              <button><i class="far fa-heart"></i></button>
+              <button><i class="far fa-eye"></i></button>
+            </div>
+            <button class="add-to-cart">Add To Cart</button>
+          </div>
+          <div class="product-info">
+            <h4>IPS LCD Gaming Monitor</h4>
+            <div class="product-price"><span class="price-new">$370</span><span class="price-old">$400</span></div>
+            <div class="stars">★★★★★ <span>(99)</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <span class="badge">-25%</span>
+            <img src="../assests/chair.png" alt="Chair" />
+            <div class="product-actions">
+              <button><i class="far fa-heart"></i></button>
+              <button><i class="far fa-eye"></i></button>
+            </div>
+            <button class="add-to-cart">Add To Cart</button>
+          </div>
+          <div class="product-info">
+            <h4>S-Series Comfort Chair</h4>
+            <div class="product-price"><span class="price-new">$375</span><span class="price-old">$400</span></div>
+            <div class="stars">★★★★★ <span>(99)</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="view-all-wrap"><button class="btn-red">View All Products</button></div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CATEGORIES -->
+  <section id="categories">
+    <div class="section-tag">
+      <div class="red-bar"></div><span>Categories</span>
+    </div>
+    <div class="section-header">
+      <h2>Browse By Category</h2>
+      <div class="nav-arrows-categories">
+        <button class="arr-btn"><i class="fas fa-arrow-left"></i></button>
+        <button class="arr-btn"><i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <div class="categories-grid">
+      <div class="category-card"><i class="fas fa-mobile-alt"></i><span>Phones</span></div>
+      <div class="category-card"><i class="fas fa-desktop"></i><span>Computers</span></div>
+      <div class="category-card"><i class="fas fa-clock"></i><span>SmartWatch</span></div>
+      <div class="category-card active"><i class="fas fa-camera"></i><span>Camera</span></div>
+      <div class="category-card"><i class="fas fa-headphones"></i><span>HeadPhones</span></div>
+      <div class="category-card"><i class="fas fa-gamepad"></i><span>Gaming</span></div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- BEST SELLING -->
+  <section id="best-selling">
+    <div class="section-tag">
+      <div class="red-bar"></div><span>This Month</span>
+    </div>
+    <div class="section-header">
+      <h2>Best Selling Products</h2>
+      <button class="btn-red">View All</button>
+    </div>
+    <div class="products-grid-4">
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="../assests/red-coat.png" alt="Coat" />
+          <div class="product-actions">
+            <button><i class="far fa-heart"></i></button>
+            <button><i class="far fa-eye"></i></button>
+          </div>
+          <button class="add-to-cart">Add To Cart</button>
+        </div>
+        <div class="product-info">
+          <h4>The north coat</h4>
+          <div class="product-price"><span class="price-new">$260</span><span class="price-old">$360</span></div>
+          <div class="stars">★★★★★ <span>(65)</span></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="../assests/bag.png" alt="Bag" />
+          <div class="product-actions">
+            <button><i class="far fa-heart"></i></button>
+            <button><i class="far fa-eye"></i></button>
+          </div>
+          <button class="add-to-cart">Add To Cart</button>
+        </div>
+        <div class="product-info">
+          <h4>Gucci duffle bag</h4>
+          <div class="product-price"><span class="price-new">$960</span><span class="price-old">$1160</span></div>
+          <div class="stars">★★★★★ <span>(65)</span></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="../assests/cpu-cooler.png" alt="CPU Cooler" />
+          <div class="product-actions">
+            <button><i class="far fa-heart"></i></button>
+            <button><i class="far fa-eye"></i></button>
+          </div>
+          <button class="add-to-cart">Add To Cart</button>
+        </div>
+        <div class="product-info">
+          <h4>RGB liquid CPU Cooler</h4>
+          <div class="product-price"><span class="price-new">$160</span><span class="price-old">$170</span></div>
+          <div class="stars">★★★★★ <span>(65)</span></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="../assests/book-shelf.png" alt="Bookshelf" />
+          <div class="product-actions">
+            <button><i class="far fa-heart"></i></button>
+            <button><i class="far fa-eye"></i></button>
+          </div>
+          <button class="add-to-cart">Add To Cart</button>
+        </div>
+        <div class="product-info">
+          <h4>Small BookSelf</h4>
+          <div class="product-price"><span class="price-new">$360</span></div>
+          <div class="stars">★★★★★ <span>(65)</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MUSIC BANNER -->
+  <section id="musicContainer">
+    <div class="music-banner">
+      <div class="music-content">
+        <div class="cat-label">Categories</div>
+        <h2>Enhance Your Music Experience</h2>
+        <div class="music-timer">
+          <div class="music-timer-box">23<small>Hours</small></div>
+          <div class="music-timer-box">05<small>Days</small></div>
+          <div class="music-timer-box">59<small>Minutes</small></div>
+          <div class="music-timer-box">35<small>Seconds</small></div>
+        </div>
+        <button class="btn-green">Buy Now!</button>
+      </div>
+      <img class="blur-jbl-speaker-img" src="../assests/jbl-speaker-blur.png" alt="">
+      <img class="music-img" src="../assests/jbl-speaker.png" alt="JBL Speaker" />
+    </div>
+  </section>
+
+  <!-- EXPLORE PRODUCTS -->
+  <section id="explore">
+    <div class="section-tag">
+      <div class="red-bar"></div><span>Our Products</span>
+    </div>
+    <div class="section-header">
+      <h2>Explore Our Products</h2>
+      <div class="nav-arrows nav-arrows-categories">
+        <button class="arr-btn"><i class="fas fa-arrow-left"></i></button>
+        <button class="arr-btn"><i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <div class="products-grid-8">
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="../assests/dog-food.png" alt="Dog Food" />
+          <div class="product-actions">
+            <button><i class="far fa-heart"></i></button>
+            <button><i class="far fa-eye"></i></button>
+          </div>
+          <button class="add-to-cart">Add To Cart</button>
+        </div>
+        <div class="product-info">
+          <h4>Breed Dry Dog Food</h4>
+          <div class="product-price"><span class="price-new">$100</span></div>
+          <div class="stars">★★★★☆ <span>(35)</span></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="../assests/camera.png" alt="Camera" />
+          <div class="product-actions">
+            <button><i class="far fa-heart"></i></button>
+            <button><i class="far fa-eye"></i></button>
+          </div>
+          <button class="add-to-cart">Add To Cart</button>
+        </div>
+        <div class="product-info">
+          <h4>CANON EOS DSLR Camera</h4>
+          <div class="product-price"><span class="price-new">$360</span></div>
+          <div class="stars">★★★★★ <span>(95)</span></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="../assests/laptop.png" alt="Laptop" />
+          <div class="product-actions">
+            <button><i class="far fa-heart"></i></button>
+            <button><i class="far fa-eye"></i></button>
+          </div>
+          <button class="add-to-cart">Add To Cart</button>
+        </div>
+        <div class="product-info">
+          <h4>ASUS FHD Gaming Laptop</h4>
+          <div class="product-price"><span class="price-new">$700</span></div>
+          <div class="stars">★★★★★ <span>(325)</span></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="../assests/curology.png" alt="Curology" />
+          <div class="product-actions">
+            <button><i class="far fa-heart"></i></button>
+            <button><i class="far fa-eye"></i></button>
+          </div>
+          <button class="add-to-cart">Add To Cart</button>
+        </div>
+        <div class="product-info">
+          <h4>Curology Product Set</h4>
+          <div class="product-price"><span class="price-new">$500</span></div>
+          <div class="stars">★★★★★ <span>(145)</span></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <span class="badge new">NEW</span>
+          <img src="../assests/kidsCar.png" alt="Kids Car" />
+          <div class="product-actions">
+            <button><i class="far fa-heart"></i></button>
+            <button><i class="far fa-eye"></i></button>
+          </div>
+          <button class="add-to-cart">Add To Cart</button>
+        </div>
+        <div class="product-info">
+          <h4>Kids Electric Car</h4>
+          <div class="product-price"><span class="price-new">$960</span></div>
+          <div class="stars">★★★★★ <span>(55)</span></div>
+          <div class="color-dots">
+            <div class="color-dot active" style="background:#222;"></div>
+            <div class="color-dot" style="background:#DB4444;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="../assests/cleats.png" alt="Cleats" />
+          <div class="product-actions">
+            <button><i class="far fa-heart"></i></button>
+            <button><i class="far fa-eye"></i></button>
+          </div>
+          <button class="add-to-cart">Add To Cart</button>
+        </div>
+        <div class="product-info">
+          <h4>Jr. Zoom Soccer Cleats</h4>
+          <div class="product-price"><span class="price-new">$1160</span></div>
+          <div class="stars">★★★★★ <span>(35)</span></div>
+          <div class="color-dots">
+            <div class="color-dot active" style="background:#ADFF2F;"></div>
+            <div class="color-dot" style="background:#DB4444;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <span class="badge new">NEW</span>
+          <img src="../assests/gamepad.png" alt="Gamepad" />
+          <div class="product-actions">
+            <button><i class="far fa-heart"></i></button>
+            <button><i class="far fa-eye"></i></button>
+          </div>
+          <button class="add-to-cart">Add To Cart</button>
+        </div>
+        <div class="product-info">
+          <h4>GP11 Shooter USB Gamepad</h4>
+          <div class="product-price"><span class="price-new">$660</span></div>
+          <div class="stars">★★★★★ <span>(55)</span></div>
+          <div class="color-dots">
+            <div class="color-dot active" style="background:#222;"></div>
+            <div class="color-dot" style="background:#DB4444;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="../assests/jacket.png" alt="Jacket" />
+          <div class="product-actions">
+            <button><i class="far fa-heart"></i></button>
+            <button><i class="far fa-eye"></i></button>
+          </div>
+          <button class="add-to-cart">Add To Cart</button>
+        </div>
+        <div class="product-info">
+          <h4>Quilted Satin Jacket</h4>
+          <div class="product-price"><span class="price-new">$660</span></div>
+          <div class="stars">★★★★★ <span>(55)</span></div>
+          <div class="color-dots">
+            <div class="color-dot active" style="background:#1B4332;"></div>
+            <div class="color-dot" style="background:#DB4444;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="view-all-wrap"><button class="btn-red">View All Products</button></div>
+  </section>
+
+  <!-- NEW ARRIVAL -->
+  <section id="new-arrival">
+  <div class="section-tag">
+    <div class="red-bar"></div>
+    <span>Featured</span>
+  </div>
+
+  <h2>New Arrival</h2>
+
+  <div class="new-arrival-grid">
+
+    <!-- PS5 -->
+    <div class="arrival-card large">
+      <img src="../assests/ps-5.png" alt="PS5">
+      <div class="arrival-info">
+        <h3>PlayStation 5</h3>
+        <p>Black and White version of the PS5 coming out on sale.</p>
+        <a href="#">Shop Now</a>
+      </div>
+    </div>
+
+    <!-- Women -->
+    <div class="arrival-card wide women">
+      <img src="../assests/woman-fasion.png" alt="Women Fashion">
+      <div class="arrival-info">
+        <h3>Women's Collections</h3>
+        <p>Featured woman collections that give you another vibe.</p>
+        <a href="#">Shop Now</a>
+      </div>
+    </div>
+
+    <!-- Speakers -->
+    <div class="arrival-card speakers">
+      <img src="../assests/speakers.png" alt="Speakers">
+      <div class="arrival-info">
+        <h3>Speakers</h3>
+        <p>Amazon wireless speakers</p>
+        <a href="#">Shop Now</a>
+      </div>
+    </div>
+
+    <!-- Perfume -->
+    <div class="arrival-card perfume">
+      <img src="../assests/perfume.png" alt="Perfume">
+      <div class="arrival-info">
+        <h3>Perfume</h3>
+        <p>GUCCI INTENSE OUD EDP</p>
+        <a href="#">Shop Now</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- SERVICES -->
+  <div class="services-section">
+    <div class="services-grid">
+      <div class="service-item">
+        <div class="service-icon"><img src="../assests/truck-icon.png" alt="truck-icon"></div>
+        <h4>FREE AND FAST DELIVERY</h4>
+        <p>Free delivery for all orders over $140</p>
+      </div>
+      <div class="service-item">
+        <div class="service-icon"><img src="../assests/headSet-icon.png" alt="headset-icon"></div>
+        <h4>24/7 CUSTOMER SERVICE</h4>
+        <p>Friendly 24/7 customer support</p>
+      </div>
+      <div class="service-item">
+        <div class="service-icon"><img src="../assests/shield-tick.png" alt="shield-tick"></div>
+        <h4>MONEY BACK GUARANTEE</h4>
+        <p>We return money within 30 days</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>Shopping Master</h3>
+        <h4>Subscribe</h4>
+        <p>Get 10% off your first order</p>
+        <div class="subscribe-box">
+          <input type="email" placeholder="Enter your email" />
+          <button><i class="fas fa-paper-plane"></i></button>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+        <p>exclusive@gmail.com</p>
+        <p>+88015-88888-9999</p>
+      </div>
+      <div class="footer-col">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Login / Register</a></li>
+          <li><a href="#">Cart</a></li>
+          <li><a href="#">Wishlist</a></li>
+          <li><a href="#">Shop</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Link</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms Of Use</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Download App</h4>
+        <p style="font-size:11px; color:#aaa;">Save $3 with App New User Only</p>
+        <div style="display:flex; gap:12px; align-items:center; margin-bottom:12px;">
+          <div>
+            <img src="../assests/qrCode.png" alt="">
+          </div>
+          <div>
+            <div class="google-play-container">
+              <img src="../assests/google-play.png" alt="">
+            </div>
+            <div>
+              <img src="../assests/app-store.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; Copyright Rimel 2022. All right reserved
+    </div>
+  </footer>
+
+  <script src="../javascript/script.js">
+
+  </script>
+</body>
+
+</html>
